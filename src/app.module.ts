@@ -15,12 +15,11 @@ import { AppService } from './app.service';
       password: 'admin',
       database: 'notebooks',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true, 
+      synchronize: true,
     }),
     NotebooksModule,
   ],
   controllers: [AppController],
   providers: [AppService],
-
 })
 export class AppModule {}

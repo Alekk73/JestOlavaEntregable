@@ -19,7 +19,7 @@ export class NotebooksController {
   async findAll(): Promise<Notebook[]> {
     try {
       return await this.notebooksService.findAll();
-    } catch (error) {
+    } catch {
       throw new HttpException(
         'Error retrieving notebooks',
         HttpStatus.INTERNAL_SERVER_ERROR,
@@ -28,10 +28,12 @@ export class NotebooksController {
   }
 
   @Post()
-  async create(@Body() createNotebookDto: CreateNotebookDto): Promise<Notebook> {
+  async create(
+    @Body() createNotebookDto: CreateNotebookDto,
+  ): Promise<Notebook> {
     try {
       return await this.notebooksService.create(createNotebookDto);
-    } catch (error) {
+    } catch {
       throw new HttpException(
         'Error creating notebook',
         HttpStatus.BAD_REQUEST,

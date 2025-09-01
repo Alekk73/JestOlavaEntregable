@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { NotebooksController } from '../notebooks.controller';
-import { NotebooksService } from '../notebooks.service';
+import { NotebooksController } from '../../notebooks.controller';
+import { NotebooksService } from '../../notebooks.service';
 import { HttpException, HttpStatus } from '@nestjs/common';
-import { CreateNotebookDto } from '../dto/create-notebook.dto';
-import { Notebook } from '../entities/notebook.entity';
+import { CreateNotebookDto } from '../../dto/create-notebook.dto';
+import { Notebook } from '../../entities/notebook.entity';
 
 describe('NotebooksController', () => {
   let controller: NotebooksController;

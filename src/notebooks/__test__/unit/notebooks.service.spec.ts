@@ -1,8 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { NotebooksService } from '../notebooks.service';
+import { NotebooksService } from '../../notebooks.service';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { Notebook } from '../entities/notebook.entity';
-import { CreateNotebookDto } from '../dto/create-notebook.dto';
+import { Notebook } from '../../entities/notebook.entity';
+import { CreateNotebookDto } from '../../dto/create-notebook.dto';
 
 describe('NotebooksService', () => {
   let service: NotebooksService;

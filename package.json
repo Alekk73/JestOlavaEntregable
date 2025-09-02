@@ -77,7 +77,8 @@
     "coveragePathIgnorePatterns": [
       ".module.ts",
       ".dto.ts",
-      ".entity.ts"
+      ".entity.ts",
+      "src/main.ts"
     ],
     "testEnvironment": "node"
   }

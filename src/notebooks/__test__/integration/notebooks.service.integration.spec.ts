@@ -19,6 +19,7 @@ describe('NotebookService (Integración)', () => {
         }),
         TypeOrmModule.forFeature([Notebook]),
       ],
+
       providers: [NotebooksService],
     }).compile();
 
